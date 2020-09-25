@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/clr_000000"
+	android:orientation="vertical">
+
+	<!--<LinearLayout-->
+	<!--android:layout_width="match_parent"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:background="@color/white"-->
+	<!--android:orientation="horizontal"-->
+	<!--android:paddingBottom="@dimen/dimen10"-->
+	<!--android:paddingTop="@dimen/dimen10"-->
+	<!--android:visibility="gone">-->
+
+	<!--<LinearLayout-->
+	<!--android:layout_width="0dp"-->
+	<!--android:layout_height="match_parent"-->
+	<!--android:layout_weight="1"-->
+	<!--android:paddingStart="@dimen/dimen10">-->
+
+	<!--<TextView-->
+	<!--android:id="@+id/btn_select_year"-->
+	<!--android:layout_width="wrap_content"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:background="@drawable/btn_selected_style"-->
+	<!--android:button="@null"-->
+	<!--android:paddingBottom="@dimen/dimen5"-->
+	<!--android:paddingStart="@dimen/dimen10"-->
+	<!--android:paddingEnd="@dimen/dimen20"-->
+	<!--android:paddingTop="@dimen/dimen5"-->
+	<!--android:textColor="@drawable/sel_calendar_tv_color"-->
+	<!--android:text="2017"-->
+	<!--android:textSize="@dimen/txtSize12"/>-->
+	<!--</LinearLayout>-->
+
+	<!--</LinearLayout>-->
+
+	<LinearLayout
+		android:id="@+id/ll_select_year_month"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/clr_white"
+		android:orientation="vertical">
+
+		<com.jie.calendarviewdemo.calender.HorizontalScrollViewCustom
+			android:id="@+id/hsv_year"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:overScrollMode="never"
+			android:scrollbars="none">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+			</LinearLayout>
+
+		</com.jie.calendarviewdemo.calender.HorizontalScrollViewCustom>
+
+		<View style="@style/v_horizontal_line"/>
+
+		<com.jie.calendarviewdemo.calender.HorizontalScrollViewCustom
+			android:id="@+id/hsv_month"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:overScrollMode="never"
+			android:scrollbars="none">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+			</LinearLayout>
+
+		</com.jie.calendarviewdemo.calender.HorizontalScrollViewCustom>
+
+	</LinearLayout>
+
+	<View style="@style/v_horizontal_line"/>
+
+	<LinearLayout
+		android:id="@+id/ll_week"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/clr_f7f7f7"
+		android:paddingBottom="@dimen/dimen5"
+		android:paddingTop="@dimen/dimen5"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="@string/sunday"
+			android:textColor="@color/clr_000000"
+			android:textSize="@dimen/txtSize12"/>
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="@string/monday"
+			android:textColor="@color/clr_000000"
+			android:textSize="@dimen/txtSize12"/>
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="@string/tuesday"
+			android:textColor="@color/clr_000000"
+			android:textSize="@dimen/txtSize12"/>
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="@string/wednesday"
+			android:textColor="@color/clr_000000"
+			android:textSize="@dimen/txtSize12"/>
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="@string/thursday"
+			android:textColor="@color/clr_000000"
+			android:textSize="@dimen/txtSize12"/>
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="@string/friday"
+			android:textColor="@color/clr_000000"
+			android:textSize="@dimen/txtSize12"/>
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:text="@string/saturday"
+			android:textColor="@color/clr_000000"
+			android:textSize="@dimen/txtSize12"/>
+	</LinearLayout>
+
+	<com.jie.calendarviewdemo.calender.WrapViewPager
+		android:id="@+id/vp_calendar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+</LinearLayout>

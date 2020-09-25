@@ -1,0 +1,40 @@
+<resources>
+
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<!-- Customize your theme here. -->
+		<item name="colorPrimary">@color/clr_096d94</item>
+		<item name="colorPrimaryDark">@color/clr_096d94</item>
+		<item name="colorAccent">@color/clr_096d94</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+
+	<style name="v_horizontal_line">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">@dimen/px1</item>
+		<item name="android:background">@color/clr_c2c2c2</item>
+	</style>
+
+	<declare-styleable name="CellView">
+		<attr name="cell_day_text_size" format="dimension" />
+		<attr name="cell_month_text_size" format="dimension"/>
+		<attr name="cell_lunar_text_size" format="dimension" />
+		<attr name="cell_scheme_radius" format="dimension" />
+		<attr name="cell_scheme_text_size" format="dimension" />
+	</declare-styleable>
+
+	<declare-styleable name="CustomerCalendarView">
+		<attr name="week_background" format="color" />
+		<attr name="week_text_color" format="color" />
+		<attr name="scheme_theme_color" format="color" />
+		<attr name="current_day_color" format="color" />
+		<attr name="scheme_text" format="string" />
+		<attr name="selected_color" format="color" />
+		<attr name="selected_text_color" format="color" />
+		<attr name="lunar_text_color" format="color" />
+		<attr name="min_year" format="integer" />
+		<attr name="max_year" format="integer" />
+		<attr name="click_mode" format="integer" />
+	</declare-styleable>
+
+</resources>

@@ -1,0 +1,38 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">CalendarViewDemo</string>
+	<string name="jan">JAN</string>
+	<string name="feb">FEB</string>
+	<string name="mar">MAR</string>
+	<string name="apr">APR</string>
+	<string name="may_1">MAY</string>
+	<string name="jun">JUN</string>
+	<string name="jul">JUL</string>
+	<string name="aug">AUG</string>
+	<string name="sep">SEP</string>
+	<string name="oct">OCT</string>
+	<string name="nov">NOV</string>
+	<string name="dec">DEC</string>
+
+	<string name="sunday">Su</string>
+	<string name="monday">Mo</string>
+	<string name="tuesday">Tu</string>
+	<string name="wednesday">We</string>
+	<string name="thursday">Th</string>
+	<string name="friday">Fr</string>
+	<string name="saturday">Sa</string>
+
+	<string name="january">January</string>
+	<string name="february">February</string>
+	<string name="march">March</string>
+	<string name="april">April</string>
+	<string name="may">May</string>
+	<string name="june">June</string>
+	<string name="july">July</string>
+	<string name="august">August</string>
+	<string name="september">September</string>
+	<string name="october">October</string>
+	<string name="november">November</string>
+	<string name="december">December</string>
+
+	<string name="space_year">&#160;<xliff:g>%s</xliff:g></string>
+</resources>
